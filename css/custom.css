@@ -1,0 +1,93 @@
+/* Custom Styles for Sermultimedia */
+
+/* Large Icon for Demo Section */
+.large-icon {
+    font-size: 48px;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+/* Testimonial Author */
+.testimonial-author {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #aaa;
+    text-align: right;
+}
+
+/* Swiper Slider Styles */
+.swiper-container {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 320px;
+    height: 180px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.swiper-slide .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.swiper-slide:hover .overlay {
+    opacity: 1;
+}
+
+.swiper-slide .overlay .material-symbols-outlined {
+    font-size: 48px;
+}
+
+.swiper-slide .overlay h4 {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--neon-color) !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--neon-color) !important;
+}
+
+/* Web Portfolio Slide Images */
+.web-slide-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Modal adjustments */
+.modal-content {
+    width: 90%;
+    max-width: 900px;
+}
+
+.video-item .thumb-placeholder {
+    width: 100%;
+    height: 180px; /* Ajustar a la altura del slider */
+    background-color: #333;
+    border-radius: 8px;
+}
