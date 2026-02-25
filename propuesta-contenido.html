@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PMKMX92K');</script>
+    <!-- End Google Tag Manager -->
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta de Contenido | Sermultimedia</title>
+    <meta name="description" content="Propuesta de contenido audiovisual para redes sociales - Planes de video e imágenes">
+    <meta property="og:image" content="https://sermultimedia.netlify.app/">
+    <meta name="author" content="Sermultimedia">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sermultimedia.netlify.app/propuesta-contenido.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Propuesta de Contenido | Sermultimedia">
+    <meta property="og:description" content="Planes de contenido audiovisual para redes sociales">
+    <meta property="og:locale" content="es_CO">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Iconos -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- Animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .propuesta-container {
+            max-width: 900px;
+            margin: 120px auto 60px;
+            padding: 40px;
+        }
+        .propuesta-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .propuesta-header h1 {
+            font-size: 2.5rem;
+            color: var(--text);
+            margin-bottom: 15px;
+        }
+        .propuesta-header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+        .plan-card {
+            background: var(--bg-card);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        .plan-card.recommended {
+            border: 2px solid var(--accent);
+            position: relative;
+        }
+        .plan-badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--accent);
+            color: #000;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+        .plan-title {
+            font-size: 1.8rem;
+            color: var(--text);
+            margin-bottom: 10px;
+        }
+        .plan-price {
+            font-size: 2.5rem;
+            color: var(--accent);
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .plan-price span {
+            font-size: 1rem;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+        .plan-includes {
+            margin: 25px 0;
+        }
+        .plan-includes h3 {
+            color: var(--text);
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+        .plan-includes ul {
+            list-style: none;
+            padding: 0;
+        }
+        .plan-includes li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+            color: var(--text-muted);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .plan-includes li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+        .plan-benefits {
+            background: rgba(233, 69, 96, 0.1);
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 25px;
+        }
+        .plan-benefits h3 {
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+        .plan-benefits ul {
+            list-style: none;
+            padding: 0;
+        }
+        .plan-benefits li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+            color: var(--text-muted);
+        }
+        .plan-benefits li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 18px;
+            background: var(--accent);
+            color: #000;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-top: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(233, 69, 96, 0.4);
+        }
+        .cta-button.secondary {
+            background: transparent;
+            border: 2px solid var(--accent);
+            color: var(--accent);
+        }
+        .cta-button.secondary:hover {
+            background: var(--accent);
+            color: #000;
+        }
+        .btn-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: var(--accent);
+            color: #000;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: transform 0.3s;
+        }
+        .btn-back:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PMKMX92K"
+    height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">SERMULTIMEDIA<span class="dot">.</span></span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html#servicios">Servicios</a></li>
+                <li><a href="index.html#portafolio">Portafolio</a></li>
+                <li><a href="index.html#planes">Planes</a></li>
+                <li><a href="index.html#contacto" class="nav-cta">WhatsApp</a></li>
+            </ul>
+            
+            <button class="mobile-menu-btn" aria-label="Menú">
+                <i class="ri-menu-4-line"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="close-menu"><i class="ri-close-line"></i></button>
+        <a href="index.html#servicios">Servicios</a>
+        <a href="index.html#portafolio">Portafolio</a>
+        <a href="index.html#planes">Planes</a>
+        <a href="index.html#contacto">Contacto</a>
+    </div>
+
+    <!-- Main Content -->
+    <main class="propuesta-container">
+        <div class="propuesta-header">
+            <h1>📹 Propuesta de Contenido Audiovisual</h1>
+            <p>Planes diseñados para mantener tu marca activa y generando resultados</p>
+        </div>
+
+        <!-- Plan Básico -->
+        <div class="plan-card">
+            <h2 class="plan-title">Opción 1 – Plan Básico</h2>
+            <div class="plan-price">$600.000 <span>COP / mes</span></div>
+            
+            <div class="plan-includes">
+                <h3>Incluye:</h3>
+                <ul>
+                    <li>6 videos cortos (Reels / TikTok / Shorts)</li>
+                    <li>2 sesiones de grabación al mes (4 horas cada una)</li>
+                    <li>Número de entregas parciales: 2</li>
+                    <li>Guion, grabación y edición optimizada en lote</li>
+                    <li>8 piezas gráficas (fotos rápidas de productos tomadas con celular de excelente resolución; sujeto a disponibilidad de equipo, y ajustes rápidos con IA)</li>
+                    <li>Planeación y programación mensual del contenido</li>
+                </ul>
+            </div>
+            
+            <div class="plan-benefits">
+                <h3>Beneficios del plan:</h3>
+                <ul>
+                    <li>Presencia constante en redes sociales con contenido estratégico</li>
+                    <li>1 video y 2 imágenes por semana para mantener interacción y visibilidad</li>
+                    <li>Contenido programado en horarios óptimos para maximizar alcance y engagement</li>
+                    <li>Producción sostenible para mantener calidad sin sobrecarga</li>
+                </ul>
+            </div>
+            
+            <a href="https://wa.me/573054786001?text=Hola,%20me%20interesa%20el%20Plan%20B%C3%A1sico" class="cta-button">
+                <i class="ri-whatsapp-line"></i> Solicitar Plan Básico
+            </a>
+        </div>
+
+        <!-- Plan Intermedio -->
+        <div class="plan-card recommended">
+            <div class="plan-badge">¡RECOMENDADO!</div>
+            <h2 class="plan-title">Opción 2 – Plan Intermedio</h2>
+            <div class="plan-price">$750.000 <span>COP / mes</span></div>
+            
+            <div class="plan-includes">
+                <h3>Incluye:</h3>
+                <ul>
+                    <li>8 videos mensuales</li>
+                    <li>3 sesiones de grabación al mes (4 horas cada una)</li>
+                    <li>Número de entregas parciales: 3</li>
+                    <li>Guion, grabación y edición optimizada en lote</li>
+                    <li>12 piezas gráficas</li>
+                    <li>Fotos rápidas de productos (tomadas con celular de excelente resolución; sujeto a disponibilidad de equipo) y ajustes rápidos con IA</li>
+                    <li>Planeación y programación mensual</li>
+                </ul>
+            </div>
+            
+            <div class="plan-benefits">
+                <h3>Beneficios del plan:</h3>
+                <ul>
+                    <li>Material suficiente para promocionar productos o campañas especiales: 2 videos y 3 imágenes por semana</li>
+                    <li>Mayor frecuencia y alcance de contenido</li>
+                    <li>Videos e imágenes distribuidos estratégicamente para máxima visibilidad</li>
+                    <li>Contenido programado en horarios óptimos para generar más interacciones y ventas</li>
+                    <li>Producción sostenible y organizada</li>
+                </ul>
+            </div>
+            
+            <a href="https://wa.me/573054786001?text=Hola,%20me%20interesa%20el%20Plan%20Intermedio" class="cta-button">
+                <i class="ri-whatsapp-line"></i> Solicitar Plan Intermedio
+            </a>
+        </div>
+
+        <a href="index.html" class="btn-back"><i class="ri-arrow-left-line"></i> Volver al inicio</a>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon"><i class="ri-play-fill"></i></span>
+                        <span class="logo-text">SERMULTIMEDIA<span class="dot">.</span></span>
+                    </a>
+                    <p>Sermultimedia: Tu socio estratégico en producción audiovisual y páginas web en Cúcuta, Colombia.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Explora</h4>
+                    <a href="index.html#servicios">Servicios</a>
+                    <a href="index.html#portafolio">Portafolio</a>
+                    <a href="index.html#planes">Planes</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Documentos</h4>
+                    <a href="manual-ejecucion.html">Manual de Ejecución</a>
+                    <a href="propuesta-contenido.html">Propuesta de Contenido</a>
+                    <a href="propuesta-gestion-campañas.html">Gestión de Campañas</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="terminos.html">Términos y Condiciones</a>
+                    <a href="#">Política de Privacidad</a>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Conecta</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com/sergiomultimedia" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+                        <a href="https://tiktok.com/@sergiomultimedia" aria-label="TikTok"><i class="ri-tiktok-line"></i></a>
+                        <a href="https://facebook.com/sergiomultimedia" aria-label="Facebook"><i class="ri-facebook-line"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sermultimedia. Todos los derechos reservados.</p>
+                <p class="footer-location">Cúcuta, Norte de Santander, Colombia</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
